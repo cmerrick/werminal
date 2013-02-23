@@ -2,7 +2,7 @@
 
 A web-based terminal for interacting with web-based services.  Users authenticate with the werminal service using a google account, and then connect their werminal account to supported third party services, typically using OAuth.
 
-###Supported Services###
+#####Supported Services#####
 - Yammer
 
 ##Contribute##
