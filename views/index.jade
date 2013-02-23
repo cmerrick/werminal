@@ -1,0 +1,26 @@
+div(ng-controller='WermCtrl')
+  div.row
+    header.span12
+      div.account
+        if user
+          span Logged in as #{user.displayName} [
+            a(href='logout', tabindex="-1") logout
+          ]
+        else
+          span Login with 
+          a(href='/signin/google', tabindex="-1") Google
+  div.row
+    section.werminal-container.span10.offset1
+      werm-input.prompt(rows=2, placeholder="type 'help' and press enter for help", name="werminal", ng-model='wermInput', ui-keydown="{'enter': 'runCommand($event)'}", ng-change="autocomplete(wermInput)")
+      div#popup.input-popup
+        h3.input-popup-title Quoted Input (Ctrl+Enter to complete)
+        div.input-popup-content
+          textarea#popupText
+      div#helpers.helpers
+        div#error.error(ng-show="lastError") {{lastError}}
+        div.autocomplete-container.span10
+          ul#autocomplete.autocomplete(ng-show="autocompleteMatches")
+            li(ng-repeat="match in autocompleteMatches")
+              span.command {{match._cmd}}
+              span.description {{match._desc}}
+      div#output(ng-include='', src='template')

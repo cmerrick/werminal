@@ -1,0 +1,27 @@
+<ul class="yammer messages">
+  <li class="message" ng-repeat='message in wermOutput.messages'>
+    <div class="content">
+      <img class="avatar" src="{{message.sender.mugshot_url}}" />
+      <div class="author">
+        <strong class="fullname">{{message.sender.full_name}}</strong>
+        <span class="username">@{{message.sender.name}}</span>
+      </div>
+      <div class="body" ng-bind-html-unsafe="message.body.rich"></div>
+      <p class="attributes">{{message.created_at}}</p>
+    </div>
+
+    <ul class="extended-thread messages" ng-show="message.extended_thread">
+      <li class="message" ng-repeat='response in message.extended_thread'>
+        <div class="content">
+          <img class="avatar" src="{{response.sender.mugshot_url}}" />
+          <div class="author">
+            <strong class="fullname">{{response.sender.full_name}}</strong>
+            <span class="username">@{{response.sender.name}}</span>
+          </div>
+          <div class="body" ng-bind-html-unsafe="response.body.rich"></div>
+          <p class="attributes">{{response.created_at}}</p>
+          </div>
+      </li>
+    </ul>
+  </li>
+</ul>

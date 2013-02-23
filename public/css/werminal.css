@@ -1,0 +1,100 @@
+ul {
+  list-style: none;
+}
+
+.werminal-container {
+  position: relative;
+}
+
+.werminal-container ul {
+  margin: 0;
+}
+
+.werminal-container .prompt {
+  width: 100%;
+  border: #DDD thin solid;
+  padding: 4px;
+  z-index: 1000;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+header .account {
+  float: right;
+  font-size: .9em;
+  margin: .5em 1em;
+}
+
+.werminal-container .autocomplete-container {
+  position: absolute;
+  float: left;
+  margin: 0;
+  z-index: 40;
+}
+
+.werminal-container .autocomplete {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+}
+
+.werminal-container .autocomplete li {
+  margin: .2em .5em;
+}
+
+.werminal-container .autocomplete .description {
+  color: #BBB;
+  margin-left: 5em;
+}
+
+.werminal-container .services li {
+  margin: .2em .5em;
+}
+
+.werminal-container .services .description {
+  margin-left: 5em;
+}
+
+.werminal-container .input-popup {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  padding: 1px;
+  z-index: 1010;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  background-color: white;
+  width: 100%;
+}
+
+
+.werminal-container .input-popup-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #EBEBEB;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.werminal-container .input-popup-content textarea {
+  width: 100%;
+  border: 0px;
+}
+
+.werminal-container .error {
+  color: #D44;
+  background-color: #FDD;
+  padding: .5em;
+  border-left: #D44 thin solid;
+  border-right: #D44 thin solid;
+  border-bottom: #D44 thin solid;
+}

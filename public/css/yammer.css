@@ -1,0 +1,38 @@
+ul.yammer.messages > li {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+ul.yammer.messages .message {
+  padding: 9px 12px;
+}
+
+ul.yammer.messages ul.extended-thread {
+  margin-left: 25px;
+  background-color: #F1F1F1;
+}
+
+ul.yammer.messages .attributes {
+  color: #999999;
+  font-size: .8em;
+}
+
+ul.yammer.messages .username {
+  font-size: .9em;
+}
+
+ul.yammer.messages .message {
+  position: relative;
+}
+
+ul.yammer.messages .message .content {
+  margin-left: 58px;
+}
+
+ul.yammer.messages .message .avatar {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}

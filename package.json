@@ -1,8 +1,16 @@
 {
-  "name": "node-example",
+  "name": "werminal",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.x"
+    "express": "2.5.X",
+	"mongodb": "latest",
+	"mongoose": "3.4.0",
+	"passport": "0.1.15",
+	"passport-google": "0.2.X",
+	"passport-oauth": "0.1.X",
+	"jade": "0.27.X",
+	"connect-mongodb": "1.1.X",
+	"underscore.string": "2.3.X"
   },
   "engines": {
     "node": "0.8.x",

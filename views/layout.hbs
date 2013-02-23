@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/werminal.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  </head>
+  <body ng-controller='WermCtrl'>
+    <header>
+      <div class="account">
+      {{#if user}}
+        Logged in as {{user.displayName}}</div>
+      {{else}}
+        Login with <a href="/signin/google">Google</a>
+      {{/if}}
+      </div>
+    </header>
+    <section id="wrapper">
+      {{{body}}}
+    </section>
+  </body>
+</html>
